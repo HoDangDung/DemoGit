@@ -1,0 +1,195 @@
+/* Header */
+header .navbar-brand i{
+    color: #35a22c;
+    font-size: 2rem;
+}
+
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .navbar-brand span{
+    font-size: 2rem;
+}
+
+header ul li{
+    margin: 0 10px;
+}
+
+header ul li.active a{
+    color: #35a22c !important;
+}
+
+header ul li::after{
+    content: "";
+    background-color: #35a22c;
+    display: block;
+    width: 0%;
+    height: 2px;
+    transition: all 0.5s;
+}
+
+header ul li.active::after{
+    width: 100%;
+}
+
+header ul li:hover::after{
+    width: 100%;
+}
+
+header ul li a:hover{
+    color: #35a22c !important;
+}
+
+/* Carousel */
+.carousel-item{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.carousel-item:nth-child(1){
+    background-image: url(./../image/finland.jpg);
+}
+
+.carousel-item:nth-child(2){
+    background-image: url(./../image/mountains.jpg);
+}
+
+.carousel-item:nth-child(3){
+    background-image: url(./../image/mountains-1.jpg);
+}
+
+.img__thumb{
+    width: 150px;
+    margin: auto;
+}
+
+.img__thumb img{
+    border-radius: 85px;
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.carousel-indicators li{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+
+/* Project */
+#project .card{
+    margin-bottom: 2rem; 
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px #00000047;
+}
+
+#project .tab-content h4 {
+    font-size: 1.2rem;
+}
+
+#project .title h1, 
+#project .title p{
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #35a22c;
+    border: 1px solid #35a22c;
+}
+
+.nav-pills .nav-link {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* SERVICE */
+#service{
+    padding: 5rem 0;
+    background-image: url(./../image/3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+#service .title{
+    position: relative;
+    padding-bottom: 3rem;
+    color: white;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7,10,12,.72);
+}
+
+.service__content .col-md-4 .card{
+    padding: 2rem 1rem;
+    background-color: rgba(255,255,255,.1); 
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 4px ;
+}
+
+.service__content .col-md-4 i{
+    font-size: 3rem;
+    color: #35a22c;
+}
+
+.service__content .col-md-4 h4{
+    padding-bottom: 1rem;
+}
+
+.service__content .col-md-4 h4, 
+.service__content .col-md-4 p{
+    color: white;
+}
+
+/* EDU */
+
+#edu{
+    background-image: url(./../image/memphis_3.png);
+    background-size: 50%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 5rem 0;
+}
+
+#edu .card{   
+    background-color: rgba(255,255,255,.25);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 30%);
+    backdrop-filter: blur(3px);
+}
+
+#edu .card .card-body{
+    margin: 1.5rem 2rem;
+}
+
+#edu p{
+    color: black;
+}
+
+#edu h4{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#edu 
+
